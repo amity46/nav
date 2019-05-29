@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>In School Navigation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	</head>
+	<body>
+
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/slide04.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>An In School Navigation Project by: <a href="#">Sarthak Singhal</a></p><br>
+							<h2>Nav/n</h2>
+						</header>
+					</div>
+				</article>
+				
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/pic02(1).jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Sector 46</p>
+										<h2>Amity International School</h2>
+									</header>
+									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+									<footer class="align-center">
+										<a href="#" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/IMG_2877-1.png" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Principal AISG-46</p>
+										<h2>Ms. Arti Chopra</h2>
+									</header>
+									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+									<footer class="align-center">
+										<a href="#" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+						<h2>Morbi maximus justo</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2">
+					<div id="one" class="inner">
+						<div id="intwo"><br>
+							<h1 style="text-align: center;">You are here : -</h1>
+							
+							<p style="text-align: center;"> @ Amity International School, Sec-46, Gurugram</p><br><br>
+							<h4 style="text-align: center;">Search for class : -</h4><br><br>
+							<form name="formsearch" id="form">
+								<select id="opt" onchange="load()">
+									<option>Class1</option>
+									<option>Class2</option>
+									<option>Class3</option>
+									<option>Class4</option>
+									<option>Class5</option>
+									<option>Class6</option>
+									<option>Class7</option>
+									<option>Class8</option>
+									<option>Class9</option>
+									<option>Class10</option>
+									<option>Class11</option>
+									<option>Class12</option>
+									<option>Venues</option>
+								</select><br>
+								<select id="sec" style="display:none" onchange="inload()">
+									
+								</select>
+							</form><br>
+							<center><button id="sub" onclick="load()">Show Sections</button>
+							<button id="sub1" onclick="inload()" style="display:none">Search</button><br>
+							<table id="record">
+								<tr id="here">
+									<!-- <td id="appendhere" style="width:100vw;text-align: center;"></td> -->
+									<br><br>
+									<td id="loc" style="width:100vw;text-align: center;"></td>
+								</tr>
+							</table></center>
+</div></div>				
+
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<script>
+			// Initialize Firebase
+			var config = {
+			  apiKey: "AIzaSyCI1ih-G8-mnl63Tk6efRfQ5TXtsZEKhE8",
+			  authDomain: "classes-1c6ee.firebaseapp.com",
+			  databaseURL: "https://classes-1c6ee.firebaseio.com",
+			  projectId: "classes-1c6ee",
+			  storageBucket: "",
+			  messagingSenderId: "583257092799"
+			};
+			firebase.initializeApp(config);
+			const db = firebase.firestore();
+			
+		  </script>
+		  <script src="app.js"></script>
+	  
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
